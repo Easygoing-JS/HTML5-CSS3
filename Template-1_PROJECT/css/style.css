@@ -538,7 +538,6 @@ summary:focus {
     display: block;
     width: 100%;
 
-
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 21px;
@@ -561,6 +560,11 @@ summary:focus {
 #message {
     height: 170px;
     resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
 }
 
 .footer-form-btn {
@@ -601,17 +605,19 @@ summary:focus {
     margin: 0;
     padding: 0;
     margin-bottom: 37px;
-    list-style-position: inside;
-    list-style-type: none;
 }
 
-.footer-list-item {
+.footer-right-item {
     position: relative;
     margin-bottom: 29px;
     padding: 0 0 0 30px;
 }
 
-.footer-list-item-link {
+.footer-right-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-right-item-link {
     display: block;
     color: white;
     text-align: left;
@@ -621,15 +627,11 @@ summary:focus {
     text-decoration: none;
 }
 
-.footer-list-item-link:hover {
+.footer-right-item-link:hover {
     text-decoration: underline;
 }
 
-.footer-list-item:last-child {
-    margin-bottom: 0;
-}
-
-.footer-list-item:nth-child(1):before {
+.footer-right-item:nth-child(1):before {
     content: "";
     display: block;
     width: 24px;
@@ -646,7 +648,7 @@ summary:focus {
     background-position: center;
 }
 
-.footer-list-item:nth-child(2):before {
+.footer-right-item:nth-child(2):before {
     content: "";
     display: block;
     width: 26px;
@@ -663,7 +665,7 @@ summary:focus {
     background-position: center;
 }
 
-.footer-list-item:nth-child(3):before {
+.footer-right-item:nth-child(3):before {
     content: "";
     display: block;
     width: 22px;
@@ -680,7 +682,7 @@ summary:focus {
     background-position: center;
 }
 
-.footer-list-item:nth-child(4):before {
+.footer-right-item:nth-child(4):before {
     content: "";
     display: block;
     width: 24px;
@@ -709,8 +711,7 @@ summary:focus {
 }
 
 .footer-sprite:hover {
-    box-shadow:  0 -4px 1px 1px #fff;
-    /* box-shadow: inset 5px 5px 5px 5px #ffffff; */
+    box-shadow: 0 -4px 1px 1px #fff;
 }
 
 .footer-sprite-twitter {
@@ -734,16 +735,14 @@ summary:focus {
 }
 
 .footer-bottom {
+    display: block;
+    margin: 0;
     width: 100%;
     min-height: 26px;
     background-color: #fff;
-}
-
-.copyright {
-    display: block;
     text-align: center;
     color: #445162;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 26px;
 }
