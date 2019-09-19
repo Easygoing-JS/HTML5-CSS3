@@ -17,7 +17,11 @@ body {
     box-sizing: border-box;
     background-color: #445161;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -97,7 +101,11 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -353,8 +361,13 @@ summary:focus {
 }
 
 .reviews-super-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 1180px;
     min-height: 266px;
@@ -421,8 +434,13 @@ summary:focus {
     padding: 50px 145px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -442,6 +460,7 @@ summary:focus {
     background-color: #445162;
     border-radius: 4px;
     padding: 16px 0 20px;
+    -ms-flex-item-align: end;
     align-self: flex-end;
 }
 
@@ -500,25 +519,33 @@ summary:focus {
     outline: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
 
 .buy-offer-btn:hover {
     background-color: #445161;
     color: #fff;
+    -webkit-box-shadow: inset 0 0 0 2px #ffffff;
     box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .buy-offer-btn:active {
     background-color: #453d4e;
     color: #b1e1ec;
+    -webkit-transition: 0ms;
     transition: 0ms;
 }
 
 /* FOOTER */
 .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     min-height: 509px;
@@ -543,6 +570,8 @@ summary:focus {
     display: block;
     width: 500px;
     margin: 0 45px 0 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -585,6 +614,42 @@ textarea:focus {
     outline: none;
 }
 
+.footer-form-content:nth-child(1)::-webkit-input-placeholder,
+.footer-form-content:nth-child(2)::-webkit-input-placeholder,
+.footer-form-content:nth-child(3)::-webkit-input-placeholder {
+    text-overflow: ellipsis;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-form-content:nth-child(1):-ms-input-placeholder,
+.footer-form-content:nth-child(2):-ms-input-placeholder,
+.footer-form-content:nth-child(3):-ms-input-placeholder {
+    text-overflow: ellipsis;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-form-content:nth-child(1)::-ms-input-placeholder,
+.footer-form-content:nth-child(2)::-ms-input-placeholder,
+.footer-form-content:nth-child(3)::-ms-input-placeholder {
+    text-overflow: ellipsis;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
 .footer-form-content:nth-child(1)::placeholder,
 .footer-form-content:nth-child(2)::placeholder,
 .footer-form-content:nth-child(3)::placeholder {
@@ -613,7 +678,26 @@ textarea[placeholder] {
 .footer-form-content:nth-child(3):hover {
     background-color: gray;
     color: white;
+    -webkit-box-shadow: inset 0 0 0 2px #ffffff;
     box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.footer-form-content:nth-child(1):hover::-webkit-input-placeholder,
+.footer-form-content:nth-child(2):hover::-webkit-input-placeholder,
+.footer-form-content:nth-child(3):hover::-webkit-input-placeholder {
+    color: white;
+}
+
+.footer-form-content:nth-child(1):hover:-ms-input-placeholder,
+.footer-form-content:nth-child(2):hover:-ms-input-placeholder,
+.footer-form-content:nth-child(3):hover:-ms-input-placeholder {
+    color: white;
+}
+
+.footer-form-content:nth-child(1):hover::-ms-input-placeholder,
+.footer-form-content:nth-child(2):hover::-ms-input-placeholder,
+.footer-form-content:nth-child(3):hover::-ms-input-placeholder {
+    color: white;
 }
 
 .footer-form-content:nth-child(1):hover::placeholder,
@@ -641,18 +725,21 @@ textarea[placeholder] {
     outline: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
 
 .footer-form-btn:hover {
     background-color: #445161;
     color: #fff;
+    -webkit-box-shadow: inset 0 0 0 2px #ffffff;
     box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .footer-form-btn:active {
     background-color: #453d4e;
     color: #b1e1ec;
+    -webkit-transition: 0ms;
     transition: 0ms;
 }
 
@@ -695,9 +782,6 @@ textarea[placeholder] {
     top: 0px;
     left: 0px;
     background-image: url(../img/icon_skype.png);
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -712,9 +796,6 @@ textarea[placeholder] {
     top: 0px;
     left: 0px;
     background-image: url(../img/icon_icq.png);
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -729,9 +810,6 @@ textarea[placeholder] {
     top: 0px;
     left: 0px;
     background-image: url(../img/icon_email.png);
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -746,9 +824,6 @@ textarea[placeholder] {
     top: 0px;
     left: 0px;
     background-image: url(../img/icon_phone.png);
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -766,6 +841,7 @@ textarea[placeholder] {
 }
 
 .footer-sprite:hover {
+    -webkit-box-shadow: 0 -4px 1px 1px #fff;
     box-shadow: 0 -4px 1px 1px #fff;
 }
 
