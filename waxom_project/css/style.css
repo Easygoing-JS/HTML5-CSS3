@@ -1713,7 +1713,9 @@ a {
 	padding: 50px 0;
 }
 
-.author-block {
+.author-block,
+.designed,
+.only {
 	padding: 0 12px;
 	color: #555;
 	font-family: montserrat, sans-serif;
@@ -1721,6 +1723,8 @@ a {
 	line-height: 28px;
 	text-align: center;
 }
+
+
 
 .author-link {
 	border-left: 1px solid #555;
@@ -2218,8 +2222,6 @@ a {
 	.footer-widget-link:hover {
 		-webkit-transform: none;
 		transform: none;
-		border-left-color: none;
-		border-top-color: none;
 		border: 3px solid transparent;
 		z-index: 10;
 	}
@@ -2249,40 +2251,13 @@ a {
 		box-sizing: border-box;
 	}
 
-	.authors-wrap > .author-block:nth-child(1) {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	.authors-wrap > .author-block:nth-child(2) {
+	.designed {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 
-
-
-
-
-
-
-
-	/* ==== (#) ==== */
-
-	/* ==== (#) ==== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.only {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
